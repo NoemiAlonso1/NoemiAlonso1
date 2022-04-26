@@ -36,4 +36,4 @@ def survey():
 survey()
 ''' 
 from tabulate import tabulate 
-print (tabulate([["1. Chocalate", " $5.99", "4. Oatmeal raisin cookies", " $2.99", "7. Milk", " $2.00"], ["2. Vanilla", " $5.99", "5. Chocalate Chip cookies", " $2.99", "8. Chocalate Milk", " $2.50"], ["3. Pistachio", " $4.99", "6. Sugar Cookies", " $2.99" ] ]]))
+print (tabulate([["1. Chocalate", " $5.99", "4. Oatmeal raisin cookies", " $2.99", "7. Milk", " $2.00"], ["2. Vanilla", " $5.99", "5. Chocalate Chip cookies", " $2.99", "8. Chocalate Milk", " $2.50"], ["3. Pistachio", " $4.99", "6. Sugar Cookies", " $2.99" ] ]])) nb
