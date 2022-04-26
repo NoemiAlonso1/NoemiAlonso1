@@ -36,4 +36,38 @@ def survey():
 survey()
 ''' 
 from tabulate import tabulate 
-print (tabulate([["1. Chocalate", " $5.99", "4. Oatmeal raisin cookies", " $2.99", "7. Milk", " $2.00"], ["2. Vanilla", " $5.99", "5. Chocalate Chip cookies", " $2.99", "8. Chocalate Milk", " $2.50"], ["3. Pistachio", " $4.99", "6. Sugar Cookies", " $2.99" ] ]])) nb
+print (tabulate([["1. Chocalate", " $5.99", "4. Oatmeal raisin cookies", " $2.99", "7. Milk", " $1.75"], ["2. Vanilla", " $5.99", "5. Chocalate Chip cookies", " $2.99", "8. Chocalate Milk", " $2.25"], ["3. Pistachio", " $4.99", "6. Sugar Cookies", " $2.99", "9. Black Tea", " $2.99"]], ["IceCream", " $", " Cookies", " $", "Drinks", " $" ], "fancy_grid"))
+
+total = 0
+order = []
+#waiter is taking the costumers order
+#waiter asks what type of icecream they want
+icecream = input("Pick a type of icecream: Chocalate, Vanilla, or Pistachio? " )
+
+print(icecream)
+if icecream.lower()== "chocalate":
+    order.append("chocalate")
+    total = 5.99
+elif icecream.lower()== "vanilla":
+    order.append("vanilla")
+    total = 5.99
+elif icecream.lower()== "pistachio":
+    order.append("pistachio")
+    total = 4.99
+print("Thats is a good choice! The total will be $", total, ".")
+
+#waiter asks what type of cookies they want
+
+cookie = input("Pick a type of cookies: oatmeal, chocalate, or sugar cookies? ")
+
+print(cookie)
+if cookie.lower()== "oatmeal rasin cookies":
+    order.append("oatmeal rasin cookies")
+    total = 2.99
+elif cookie.lower()== "chocalate chip cookies":
+    order.append("chocalate chip cookies")
+    total = 2.99
+elif cookie.lower()== "sugar cookies":
+    order.append("sugar cookies")
+    total = 2.99
+print("The total will be $", total, ".")
